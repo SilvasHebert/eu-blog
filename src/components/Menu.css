@@ -1,0 +1,63 @@
+.Menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #181C2C;
+    color: #FFF;
+    width: 240px;
+    transition: width 1s;
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.301);
+    border-right: 0;
+    width: 100%;
+    margin: 5px 0;
+}
+
+
+.Menu .Pages-List{
+    flex: 1;
+    padding: 10px;
+}
+
+.Menu .Account{
+    display: flex;
+    justify-content: center;
+    background-color: #454858;
+    padding-top: 5px;
+}
+
+.Menu .Site-Name{
+    font-weight: 600;
+}
+
+.Menu .Site-Name:hover{
+    background-color: #181C2C;
+}
+
+.Menu .iconify{
+    color: #FFF;
+    margin-right: 5px;
+    font-size: 1.6rem;
+}
+
+.Menu a{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.Menu a:hover{
+    background-color: #454858;
+    border-radius: 4px;
+    transition: width 1s;
+}
+
+@media (max-width: 900px) {
+    .Menu{width: 70px;}
+    .Menu a div{display: none;}
+}
+

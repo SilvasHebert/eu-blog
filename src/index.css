@@ -1,0 +1,10 @@
+* {
+    font-family: 'Roboto';
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Mono/RobotoMono-VariableFont_wght.ttf);
+}
