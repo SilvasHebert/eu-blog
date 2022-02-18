@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
+import Card from "../components/Card";
 
-export default props => {
-    return(
-        <h1>
-            Inciio
-        </h1>
-    )
-}
+export default (props) => {
+    return (
+        <div>
+            <h1>Noticias</h1>
+            <Card/>
+        </div>
+    );
+};

@@ -1,0 +1,8 @@
+.Content{
+    display: flex;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: 40px var(--lateral-space);
+    border-radius: 3px;
+}
+
