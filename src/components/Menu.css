@@ -1,63 +1,51 @@
 .Menu {
     display: flex;
-    flex-direction: column;
-    background-color: #181C2C;
-    color: #FFF;
-    width: 240px;
-    transition: width 1s;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 var(--lateral-space);
+    height: 60px;
+    max-width: 100vw;
+    background-color: var(--color-brown-default);
 }
 
-hr {
-    border: 1px solid rgba(255, 255, 255, 0.301);
-    border-right: 0;
-    width: 100%;
-    margin: 5px 0;
+.Logo{
+    padding: 0;
 }
 
+.Logo .iconify{
+    width: 42px;
+    height: 42px;
+} 
 
-.Menu .Pages-List{
-    flex: 1;
-    padding: 10px;
+.Menu .Search {
+    flex-grow: 1;
+    max-width: 500px;
+    height: 28px;
+
+    padding: 0 10px;
+
+    border: none;
+    border-radius: 3px;
+    outline: none;
+
+    background: url('https://api.iconify.design/fa/search.svg') no-repeat center right 7px;
+    background-color: #fdefef;
 }
 
-.Menu .Account{
-    display: flex;
-    justify-content: center;
-    background-color: #454858;
-    padding-top: 5px;
-}
-
-.Menu .Site-Name{
+.Menu button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
     font-weight: 600;
+
+    transition: 0.5s;
+
+    margin: 5px;
 }
 
-.Menu .Site-Name:hover{
-    background-color: #181C2C;
-}
 
-.Menu .iconify{
-    color: #FFF;
-    margin-right: 5px;
-    font-size: 1.6rem;
+.Menu button:hover{
+    background-color: #fdefef;
 }
-
-.Menu a{
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    color: #FFF;
-    padding: 10px;
-    margin-bottom: 5px;
-}
-
-.Menu a:hover{
-    background-color: #454858;
-    border-radius: 4px;
-    transition: width 1s;
-}
-
-@media (max-width: 900px) {
-    .Menu{width: 70px;}
-    .Menu a div{display: none;}
-}
-

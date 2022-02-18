@@ -6,40 +6,17 @@ import { Icon } from '@iconify/react';
 export default props => {
     
     return (
-        <aside className='Menu'>
-
-            <nav className='Pages-List'>
-                <ul>
-                    <li>
-                        <Link to="/" className="Site-Name">
-                            <Icon icon="carbon:blog" />
-                            <div>Eu Blog</div>
-                        </Link>
-                    </li>
-                    <hr />
-                    <li>
-                        <Link to="/">
-                            <Icon icon="ant-design:home-filled"/>
-                            <div>Inicio</div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/">
-                            <Icon icon="akar-icons:settings-vertical" rotate={2}/>
-                            <div>Configurações</div>
-                        </Link>
-                    </li>
-
-                </ul>
-            </nav>
-
-            <div className='Account'>
-                    <Link to="/">
-                        <Icon icon="ic:round-account-circle" />
-                        <div>Conta</div>
-                    </Link>
+        <header className='Menu'>
+            <div className='Logo'>
+                <Icon icon="icon-park:paper-ship" />
             </div>
 
-        </aside>
+            <input className='Search' type="text"/> 
+
+            <div className='botoes-entrar'>
+                <button className='Entrar'>Entrar</button>
+                <button className='Cadastrar'>Cadastrar-se</button>
+            </div>
+        </header>
     )
 }

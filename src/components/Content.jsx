@@ -10,6 +10,7 @@ export default (props) => {
         <main className="Content">
             <Routes>
                 <Route path="/" element={<Inicio />} />
+                <Route path="/Configuracoes" element={<Configuracoes />} />
             </Routes>
         </main>
     );

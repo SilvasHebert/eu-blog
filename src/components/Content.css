@@ -1,8 +1,13 @@
 .Content{
     display: flex;
-    /* background-color: #555; */
 
-    height: 100vh;
-    width: 100vw;
+    background-color: rgb(224, 224, 224);
+    margin: 40px var(--lateral-space);
+    border-radius: 3px;
+
+    flex-grow: 1;
+    flex-basis: auto;
+
+    /* min-height: calc(100vh - 50px - 60px - 80px) ; */
 }
 
